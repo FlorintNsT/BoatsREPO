@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatbookCellid" rowHeight="80" id="KGk-i7-Jjw" customClass="Chat_BooksCell" customModule="Boats" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyu-uk-7sx">
+                        <rect key="frame" x="178" y="38" width="134" height="30"/>
+                        <color key="backgroundColor" red="0.44293902759999998" green="1" blue="0.49751995469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Chat">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="chatBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pt8-ds-7ao"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htq-zi-0VG">
+                        <rect key="frame" x="8" y="8" width="304" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="d3y-gn-DRP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4y-XX-XON">
+                        <rect key="frame" x="154" y="38" width="12" height="41"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="dXe-bI-ZIx"/>
+                            <constraint firstAttribute="height" constant="41" id="pOH-jW-wwG"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nO-aN-iem">
+                        <rect key="frame" x="8" y="38" width="134" height="30"/>
+                        <color key="backgroundColor" red="0.44293902759999998" green="1" blue="0.49751995469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Book">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="bookBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zmI-M2-e30"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dyu-uk-7sx" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="1gU-hO-i0p"/>
+                    <constraint firstAttribute="bottom" secondItem="z4y-XX-XON" secondAttribute="bottom" id="3ew-Eo-t95"/>
+                    <constraint firstItem="Dyu-uk-7sx" firstAttribute="leading" secondItem="z4y-XX-XON" secondAttribute="trailing" constant="12" id="4ah-oq-hxN"/>
+                    <constraint firstItem="9nO-aN-iem" firstAttribute="top" secondItem="htq-zi-0VG" secondAttribute="bottom" constant="12" id="EfX-Ux-oQg"/>
+                    <constraint firstItem="9nO-aN-iem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FJb-AU-7Re"/>
+                    <constraint firstItem="Dyu-uk-7sx" firstAttribute="top" secondItem="htq-zi-0VG" secondAttribute="bottom" constant="12" id="PSZ-69-TID"/>
+                    <constraint firstItem="htq-zi-0VG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ppu-9C-6rO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dyu-uk-7sx" secondAttribute="bottom" constant="3" id="Sc7-81-u19"/>
+                    <constraint firstItem="z4y-XX-XON" firstAttribute="leading" secondItem="9nO-aN-iem" secondAttribute="trailing" constant="12" id="TDr-jD-9l7"/>
+                    <constraint firstItem="z4y-XX-XON" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XUT-aZ-yqr"/>
+                    <constraint firstItem="htq-zi-0VG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Yxt-rb-dJO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9nO-aN-iem" secondAttribute="bottom" constant="3" id="ZUf-ny-yf5"/>
+                    <constraint firstItem="htq-zi-0VG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="e0G-6z-xlK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9nO-aN-iem" secondAttribute="bottom" constant="3" id="hfj-v8-lTM"/>
+                    <constraint firstItem="9nO-aN-iem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rvp-8n-wW5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="56" y="114"/>
+        </tableViewCell>
+    </objects>
+</document>
